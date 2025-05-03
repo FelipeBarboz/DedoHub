@@ -1,5 +1,4 @@
 <?php if (session_status() === PHP_SESSION_NONE) session_start(); ?>
-<?php include '../app/views/layouts/header.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +7,9 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>  
 </head>
+
+<?php include '../app/views/layouts/header.php'; ?>
+
 <body class="bg-gray-900 text-white">
 <main class="max-w-4xl mx-auto mt-10 p-6 bg-gray-900 text-white rounded shadow">
   <h1 class="text-2xl font-bold mb-6">Bem-vindo, <?= htmlspecialchars($_SESSION['username']) ?> 👋</h1>

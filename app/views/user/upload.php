@@ -18,6 +18,11 @@
         <input type="text" name="title" required class="w-full px-3 py-2 rounded bg-gray-700 border border-gray-600 focus:outline-none focus:ring focus:ring-purple-500">
       </div>
 
+      <div class="mb-4">
+        <label for="description" class="block mb-1 font-semibold">Descrição</label>
+        <textarea id="description" name="description" rows="4" class="w-full p-2 bg-gray-700 rounded text-white"></textarea>
+      </div>
+
       <div>
         <label class="block text-sm font-medium mb-1">Arquivo do vídeo:</label>
         <input type="file" name="video" accept="video/*" required class="w-full">

@@ -5,7 +5,7 @@
   <nav class="flex items-center space-x-4">
     <?php if (isset($_SESSION['user_id'])): ?>
       <a href="/dedohub/public/?url=user/dashboard" class="hover:text-purple-400 transition">
-        Perfil (<?= htmlspecialchars($_SESSION['username']) ?>)
+         <?= htmlspecialchars($_SESSION['username']) ?>
       </a>
       <form action="/dedohub/public/?url=auth/logout" method="post">
         <button type="submit" class="hover:text-purple-400 transition inline-block">Logout</button>

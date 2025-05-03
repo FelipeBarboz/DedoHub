@@ -17,7 +17,9 @@
         <div class="video-box bg-gray-800 rounded-lg overflow-hidden shadow-lg">
           <a href="/dedohub/public/?url=video/view&id=<?= $video['id'] ?>" class="block">
             <!-- Thumbnail -->
-            <img src="/dedohub/<?= $video['thumbnail_path'] ?>" alt="Thumbnail do vídeo" class="w-full h-48 object-cover">
+            <a href="/dedohub/public/?url=user/view&id=<?= $video['id'] ?>">
+              <img src="/dedohub/public/<?= $video['thumbnail'] ?>" alt="Thumbnail do vídeo" class="w-full h-48 object-cover">
+            </a>
             <!-- Título -->
             <div class="p-4">
               <h2 class="text-lg font-semibold"><?= htmlspecialchars($video['title']) ?></h2>
